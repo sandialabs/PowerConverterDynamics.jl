@@ -1,5 +1,11 @@
 # PowerConverterDynamics.jl
 
+[![Tests](https://github.com/sandialabs/PowerConverterDynamics.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/sandialabs/PowerConverterDynamics.jl/actions/workflows/CI.yml)
+[![Docs](https://github.com/sandialabs/PowerConverterDynamics.jl/actions/workflows/Docs.yml/badge.svg?branch=master)](https://sandialabs.github.io/PowerConverterDynamics.jl/dev/)
+[![Coverage](https://codecov.io/gh/sandialabs/PowerConverterDynamics.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/sandialabs/PowerConverterDynamics.jl)
+
+Documentation is hosted at [sandialabs.github.io/PowerConverterDynamics.jl/dev/](https://sandialabs.github.io/PowerConverterDynamics.jl/dev/).
+
 Differentiable DC power-conversion dynamics for a variable source, common DC bus, and battery module.
 
 ## What This Package Models
