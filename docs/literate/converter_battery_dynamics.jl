@@ -150,8 +150,11 @@ p4 = plot(
 )
 plot!(p4, t, eff; label = "Converter efficiency")
 
+generated_figure_dir = joinpath(@__DIR__, "..", "src", "generated")
+mkpath(generated_figure_dir)
+
 overview = plot(p1, p2, p3, p4; layout = (2, 2), legend = :topright)
-overview_path = joinpath(@__DIR__, "converter_dynamics_overview.svg")
+overview_path = joinpath(generated_figure_dir, "converter_dynamics_overview.svg")
 savefig(overview, overview_path)
 
 net_supply_current = i_src_bus .+ i_batt .- i_load
@@ -164,7 +167,7 @@ p_deficit = plot(
     title = "Current Deficit Drives Bus Dynamics",
 )
 hline!(p_deficit, [0.0]; label = "Zero balance", ls = :dot)
-deficit_path = joinpath(@__DIR__, "bus_current_deficit.svg")
+deficit_path = joinpath(generated_figure_dir, "bus_current_deficit.svg")
 savefig(p_deficit, deficit_path)
 
 # ## Summary Metrics

@@ -24,7 +24,7 @@ Install it from the public repository URL:
 
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/kevmoor/PowerConverterDynamics.jl")
+Pkg.add(url = "https://github.com/sandialabs/PowerConverterDynamics.jl")
 ```
 
 For local development from a checkout:

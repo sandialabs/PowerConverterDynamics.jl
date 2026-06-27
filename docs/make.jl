@@ -25,8 +25,8 @@ makedocs(
     remotes = nothing,
     format = Documenter.HTML(
         prettyurls = get(ENV, "CI", "false") == "true",
-        edit_link = "main",
-        repolink = "https://github.com/kevmoor/PowerConverterDynamics.jl",
+        edit_link = "master",
+        repolink = "https://github.com/sandialabs/PowerConverterDynamics.jl",
     ),
     checkdocs = :exports,
     pages = [
@@ -44,6 +44,7 @@ makedocs(
 
 if get(ENV, "CI", "false") == "true"
     deploydocs(
-        repo = "github.com/kevmoor/PowerConverterDynamics.jl.git",
+        repo = "github.com/sandialabs/PowerConverterDynamics.jl.git",
+        devbranch = "master",
     )
 end
